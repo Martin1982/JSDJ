@@ -1,0 +1,81 @@
+$base-color: #750300;
+
+@import 'jsdj/default/all';
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include jsdj-panel;
+@include jsdj-buttons;
+@include jsdj-sheet;
+@include jsdj-picker;
+@include jsdj-tabs;
+@include jsdj-toolbar;
+@include jsdj-toolbar-forms;
+@include jsdj-indexbar;
+@include jsdj-list;
+@include jsdj-layout;
+@include jsdj-carousel;
+@include jsdj-form;
+@include jsdj-msgbox;
+
+// Your custom code goes here...
+@include pictos-iconmask('music2');
+@include pictos-iconmask('add');
+@include pictos-iconmask('minus1');
+@include pictos-iconmask('fforward');
+@include pictos-iconmask('fbackward');
+@include pictos-iconmask('playpause');
+@include pictos-iconmask('folder_black_open');
+@include pictos-iconmask('headphones');
+
+.x-layout-card-item {
+    background: #000 url(../images/background.jpg) repeat top left;
+}
+
+.recordcase {
+    background: #ccc;
+}
+
+.knob .x-thumb::before {
+    height: 0.3em;
+    width: 0.3em;
+    -webkit-border-radius: 0.1em;
+}
+
+.x-button {
+    width: 80px;
+    height: 40px;
+    margin: 3px;
+    background-color: #333;
+    border-color: #8c8c8c;
+    background-image: none;
+}
+
+.x-button .x-button-label {
+    text-overflow: clip;
+    text-shadow: 0 0 3px red;
+    font-size:80%;
+    color: red;
+}
+
+.x-button-pressing, .x-button-pressed {
+    background-color: #999;
+    border-color: #b5b5b5;
+    background-image: none;
+}
+
+.x-form-label {
+    text-overflow: clip;
+}
+
+#filedropzone {
+    min-width: 300px;
+    min-height: 150px;
+    border: 2px dashed #333;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.jsdj-centercmp {
+    margin: 0px auto;
+}
